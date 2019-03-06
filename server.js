@@ -74,6 +74,16 @@ app.get("/about", (req, res) => {
     });
     // res.send("<h2 style='text-align:center';>BAND ON THE RUN!</h2>")
 
+app.get("/help.html", (req, res) => {
+
+    res.render("public/help.html", {
+
+        pageTitle: "Ajuda",
+        currentYear: new Date.getFullYear()
+
+    });
+
+});    
     });
 
     app.get("/maintenance", (req, res) => {
