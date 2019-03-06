@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,29 +9,77 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Apoio</title>
+
+    <style>
+
+
+
+
+        
+
+        .jumbotron {
+
+          background-image: url(https://images.unsplash.com/photo-1472722266948-a898ab5ff257?ixlib=rb-1.2.1&auto=format&fit=crop&w=1191&q=80);
+          /*
+          opacity:0.6;
+          filter:alpha(opacity=60); */
+
+          
+        }
+
+        
+
+        .alert {
+
+         
+          opacity:1;
+          filter:alpha(opacity=100);
+
+        }
+
+        #divAjuda {
+
+         
+         
+
+        }
+
+    </style>
+
+
   </head>
   <body>
 
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand">Navbar</a>
-      <form class="form-inline">
-        
-        <input class="form-control mr-sm-2" type="search" placeholder="procure um projeto" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Achar!</button>
-      </form>
-    </nav>
+            
 
     <div class="jumbotron" style="text-align:center;">
-            {{header}}
-            <p class="lead"><strike>Apenas um projeto</strike></p>
+
+     
+      <button class="btn btn-primary btn-lg">Um projeto solidário</button>
+     
+          
             <hr class="my-4">
-            <p>[...] "Uma palavra amiga, uma notícia boa? Isso faz falta no dia a dia, <strong>a gente nunca sabe quem são essas pessoas."</strong></p>
-            <a class="btn btn-warning btn-lg" href="/about" role="button">Sobre</a>
-            <a class="btn btn-outline-warning btn-lg" href="#" role="button">Nada</a>
+            <div class="container">
+              <div class="alert">
+            <p class="alert alert-info">[...] "Uma palavra amiga, uma notícia boa? Isso faz falta no dia a dia, <strong>a gente nunca sabe quem são essas pessoas."</strong></p>
+              </div>
+            </div>
+            <hr class="my-2">
+      <div id="divAjuda">
+            <h3>Não recuse</h3>
+            <a class="btn btn-outline-success btn-lg" href="/help.html" role="button">Ajuda</a>
+          </div>
+            
+
+    </div>
+
+          <div>
+
+              {{>footer}}
+
+              </div>
 
           </div>
-
-          {{footer}}
    
 
     <!-- Optional JavaScript -->

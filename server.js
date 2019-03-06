@@ -10,7 +10,7 @@ app.set('view engine', 'html');
 
 
 
-//.HBS -> .HTML
+
 app.engine('html', require('hbs').__express);
 
 
