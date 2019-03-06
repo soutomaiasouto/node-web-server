@@ -47,9 +47,9 @@ hbs.registerHelper("getFullYear", () => {
 
 });
 
-hbs.registerHelper("nav", () => {
+hbs.registerHelper("uppercase", (text) => {
 
-    return ("views/partials/nav.hbs");
+    return text.toUpperCase();
 
 });
 
@@ -69,8 +69,7 @@ app.get("/about", (req, res) => {
     res.render("about.html", {
 
         pageTitle: "Sobre",
-        currentYear: new Date().getFullYear(),
-        nav: document.get
+        currentYear: new Date().getFullYear()
 
     });
     // res.send("<h2 style='text-align:center';>BAND ON THE RUN!</h2>")
