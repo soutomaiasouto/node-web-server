@@ -76,9 +76,11 @@ app.get("/about", (req, res) => {
 
     });
 
-    app.get("/bad", (req, res) => {
+    app.get("/maintenance", (req, res) => {
 
-        res.send("404")
+        res.render("maintenance.hbs", {
+
+        });
         
         
     });
