@@ -50,37 +50,52 @@
   </head>
   <body>
 
-            
+      <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-center text-ribbon-primary">APOIO</h4>
+      <span class="text-muted">"Caso precise, não recuse ajuda"</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
 
     <div class="jumbotron" style="text-align:center;">
 
-      {{>header}}
-      <button class="btn btn-primary btn-lg">Um projeto solidário</button>
+     
+      <button class="btn btn-primary btn-lg disabled">Um projeto solidário</button>
      
           
-            <hr class="my-4">
-            <div class="container">
-              <div class="alert">
-            <p class="alert alert-info">[...] "Uma palavra amiga, uma notícia boa? Isso faz falta no dia a dia, <strong>a gente nunca sabe quem são essas pessoas."</strong></p>
-              </div>
-            </div>
-            <hr class="my-2">
-      <div id="divAjuda">
-            <h3>Não recuse</h3>
-            <a class="btn btn-outline-success btn-lg" href="/help.html" role="button">Ajuda</a>
-          </div>
+            <hr class="my-4" />
+      
+            
+            <a class="btn btn-outline-success btn-lg" href="/help.html" role="button">Projetos</a>
+            <a class="btn btn-success btn-lg" href="/about" role="button">Sobre</a>
+          
             
 
     </div>
 
           <div>
 
-              {{>footer}}
+              <div class="container">
+              <div class="alert">
+            <p class="alert alert-info">[...] "Uma palavra amiga, uma notícia boa? Isso faz falta no dia a dia, <strong>a gente nunca sabe quem são essas pessoas."</strong></p>
+              </div>
+            </div>
 
               </div>
 
           </div>
    
+
+        {{>footer}}
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
