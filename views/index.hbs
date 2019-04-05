@@ -1,138 +1,249 @@
-            <!doctype html>
-            <html lang="pt-br">
-              <head>
-                <!-- Required meta tags -->
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <!doctype html>
+                <html lang="pt-BR">
+                  <head>
+                    <!-- Required meta tags -->
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-                <!-- Bootstrap CSS -->
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                    <!-- Bootstrap CSS -->
+                    <script src="assets/css/bootstrap.css"></script>
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+                    <title>Apoio</title>
 
-                <title>Apoio</title>
-
-                <style>
-
-
-
-
-                    
-
-                    .jumbotron {
-
-                      background-image: url(https://images.unsplash.com/photo-1472722266948-a898ab5ff257?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
-                ;
-      
-                      /*
-                      opacity:0.6;
-                      filter:alpha(opacity=60); */
-
-                      
-                    }
-
-                    
-
-                    .alert {
-
-                    
-                      opacity:1;
-                      filter:alpha(opacity=100);
-
-                    }
-
-                    #apoio {
-
-                      text-align: center;
-                      margin-bottom: 30px;
-                     
-                               
-
-
-                    }
-
-                    #cvv {
-
-                      text-align: center;
-
-
-                    }
-
-                  
-
-                </style>
-
-
-              </head>
-              <body>                  
-                
-                
-                
-                
-                <button class="btn btn-success" id="apoio">APOIO</button>
-
-
-
-
-
-                  <div class="container">
-              
-                
-              
-
-                <div class="jumbotron" style="text-align:center;">
-
-                
-                  <button class="btn btn-primary btn-lg disabled">Um projeto solidário</button>
-                
-                      
-                        <hr class="my-4" />
-                  
-                        
-                        <a class="btn btn-success" href="/help.html" role="button">Projetos</a>
-                        <a class="btn btn-success" href="/about" role="button">Sobre</a>
-                      
-                        <div class="container">
-                          <div class="alert">
-                        <p class="alert alert-info">[...] "Uma palavra amiga, uma notícia boa? Isso faz falta no dia a dia, <strong>a gente nunca sabe quem são essas pessoas."</strong></p>
-                          </div>
-                        </div>
-                        
-
-                </div>
-
-              
-                      <div>
-
+                    <style>
+                        .jumbotron {
+                          background-image: url(https://images.unsplash.com/photo-1472722266948-a898ab5ff257?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
                           
 
-                          </div>
+          
+                          /*
+                          opacity:0.6;
+                          filter:alpha(opacity=60); */
 
-                      </div>
+                          
+                        }
+
+                        
+
+                        .alert {
+
+                        
+                          opacity:1;
+                          filter:alpha(opacity=100);
+
+                        }
+
+                        #apoio {
+
+                          text-align: center;
+                          margin-bottom: 30px;
+                        
+                                  
+
+
+                        }
+
+                        #cvv {
+
+                          text-align: center;
+                          background-color: #C3C3C3;
+
+
+                        }
+
+                      #app {
+
+                        text-align: center;
+                        font-family: monospace, "mono", "monofur";
+                        font-weight: bolder;
+                        text-size:64px;
+                        background-color: #;
+                        color:#000000;
+                        
+
+
+
+                      }
+
+
+                      #card {
+
+                        text-align: center;
+                        background-color: #C3C3C3;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+
+
+                      }
+
+                      {
+
+                          background-color: #CCC;
+                          margin-bottom: 100px;
+
+
+
+
+                      }
+
+                      #jumbotron2 {
+
+
+                        text-align: center;
+
+
+                      }
+
+                    </style>
+
+
+                  </head>
+                  <body>                  
+                    
+                    
+                    
+                    
+                    <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link" href="help.html">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="about.hbs">Sobre</a>
+                            </li>
+                          </ul>
+                          <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control" type="search" placeholder="procurar">
+                            <button class="btn btn-info btn-sm my-2 my-sm-0" type="submit">ENVIAR!</button>
+                          </form>
+                        </div>
+                      </nav>
+
+
+                      <br />
+                    
+
+
+
+
 
                       
-                     <div class="container">
-                      <hr />
+                  
+                    
+                  
 
-                         <h2 id="cvv">CVV<br>
-                         <span class="text-block text-ribbon text-ribbon-success">Centro de valorição a vida</span>
-                        </h2> 
+                    <div class="jumbotron" style="text-align:center;">
 
-                       </div>
+                    
+                      <button class="btn btn-outline-primary btn-lg">Apoio</button>
+                    
+                          
+                            <hr class="my-4" />
+                      
+                            
+                          
+                          
+                            <div class="container">
+                              <div class="alert">
+                            <p class="alert alert-info">[...] "Uma palavra amiga, uma notícia boa? Isso faz falta no dia a dia, <strong>a gente nunca sabe quem são essas pessoas."</strong></p>
+                              </div>
+                            </div>
+                            
+
+                    </div>
+
+                  
+                          
+
+                      
+
+
+                          
+                            
+                            
+                              
+                              <div class="container">
+                              <span id="app"></span>
+                              </div>
 
 
 
 
-                
+                          
+                        <div id="jumbotron2">
+                        
+
+                            <h2 class="text-align:center; font-weight:bolder;"><strong>CVV</strong>
+                            <br />
+
+                            <div class="container">
+                            <p>Centro de valorização da Vida</p>
+                              </h2>
+                            </div>
+                            </div>
+                                    
 
 
 
-                    {{>footer}}
+
+                        
+
+                          <br />
+                          <br />
+                          <br />
+                          <div class="container">
+  <div class="container">
+    <div class="card bg-dark text-white">
+      <img src="https://images.unsplash.com/photo-1520531598735-f4a90a7ccc4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1069&q=80" class="card-img" alt="" />
+      <div class="card-img-overlay">
+      <h5 class="card-title">Card title</h5>
+      
+    </div>
+  </div>
+
+
+  </div>
+
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+
+              
 
 
 
-                <!-- Optional JavaScript -->
-                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-              </body>
-            </html>
+
+    <script type="text/javascript">
+
+                            
+              var app = document.getElementById("app");
+
+              var typewriter = new Typewriter(app, {
+        loop: true
+    });
+
+    typewriter.typeString("1. O essencial é invisível aos olhos")
+        .pauseFor(850)
+        .deleteAll()
+        .typeString("A satisfação começa com você")
+        .pauseFor(850)
+        .start();
+
+
+
+    </script>
+
+
+
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+  </html>

@@ -78,7 +78,7 @@ app.get("/help.html", (req, res) => {
 
     res.render("public/help.html", {
 
-        pageTitle: "Ajuda",
+        pageTitle: "Apoio",
         currentYear: new Date.getFullYear()
 
     });

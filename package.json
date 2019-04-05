@@ -1,7 +1,7 @@
 {
   "name": "node-web-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "-main",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
-    "hbs": "^4.0.2"
+    "express": "^4.16.4",
+    "hbs": "^4.0.2",
+    
   }
 }
